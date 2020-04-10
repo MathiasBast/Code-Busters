@@ -60,6 +60,11 @@ body {
   text-decoration: none;
 }
 
+a, a:visited {
+  text-decoration: none;
+  color: black
+}
+
 .header {
   background-color: #ebc334;
   height: 120px;
@@ -72,4 +77,8 @@ body {
   font-size: 85px;
   line-height: 120px;
   margin-top: 0;
+}
+
+#yellow {
+  color: #ebc334;
 }
