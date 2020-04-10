@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const Fail = () => {
   return (
     <div align="center" className="fail container">
-      <h1>Too bad you failed your mission with the ghost!</h1>
+      <h1>Too bad, you failed your mission with the ghost!</h1>
       <p>Click <Link to='/game/find' id='yellow'>here</Link> to try again</p>
       <p>Good Luck!</p>
       <img src="https://media3.picsearch.com/is?n5HVAqxhGXFWrJ_iOGy2Vl7PKFiGt3a2jl22m0DOnpc&height=341" alt="scare1"/>
