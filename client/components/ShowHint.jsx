@@ -5,7 +5,7 @@ const ShowHint = props => {
   const name = props.match.params.page
   let rend = 'nope'
   if(name === 'find'){
-    rend = "Invert the color to discover the truth about the sleuth"
+    rend = "Invert the color to discover the truth about the sleuth..."
   }
   if (name === 'quiz') {
     rend = "The awnsers should make you cringe"
@@ -15,9 +15,9 @@ const ShowHint = props => {
   }
   return (
     <div className='hintContainer'>
-    <p className='hintChild'>{rend}</p>
-    <button className='hintButton'><Link className='hintChild' to={`/game/${name}`} >Back</Link></button>
-    <button className='hintButton'><Link className='hintChild' to='/'>Restart</Link></button>
+      <p className='hintChild'>{rend}</p>
+      <button className='hintButton'><Link className='hintChild' to={`/game/${name}`} >Hide hint</Link></button>
+      <button className='hintButton'><Link className='hintChild' to='/'>Restart game</Link></button>
     </div>
   )
 }
