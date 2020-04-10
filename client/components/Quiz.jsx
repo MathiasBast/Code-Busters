@@ -6,7 +6,7 @@ class Quiz extends React.Component {
     super();
 
     this.state = {
-      answer: 'teddy'
+      answer1: ''
     };
 
     this.onRadioChange = this.onRadioChange.bind(this);
@@ -16,7 +16,7 @@ class Quiz extends React.Component {
 
   onRadioChange = (e) => {
     this.setState({
-      answer: e.target.value
+      answer1: e.target.value
     });
   }
 
@@ -28,43 +28,50 @@ class Quiz extends React.Component {
   render() {
     return (
       <div className="quiz-questions">
-        <form onSubmit={this.onSubmit}>
-          <strong>What does a panda ghost eat?</strong>
-          <ul>
-            <li>
-              <label>
-                <input
-                  type="radio"
-                  value="teddy"
-                  checked={this.state.answer === "teddy"}
-                  onChange={this.onRadioChange}
-                />
-                <span>Teddy bears</span>
-              </label>
-            </li>
-            <li>
-              <label>
-                <input
-                  type="radio"
-                  value="correct1"
-                  checked={this.state.answer === "correct1"}
-                  onChange={this.onRadioChange}
-                />
-                <span>Bamboo</span>
-              </label>
-            </li>
-            <li>
-              <label>
-                <input
-                  type="radio"
-                  value="leaves"
-                  checked={this.state.answer === "leaves"}
-                  onChange={this.onRadioChange}
-                />
-                <span>Ghost leaves</span>
-              </label>
-            </li>
-          </ul>
+        {/* <form onSubmit={this.onSubmit}> */}
+          <div id="panda-eat">
+            <strong>What does a panda ghost eat?</strong>
+            <ul>
+              <li>
+                <label>
+                  <input
+                    type="radio"
+                    value="teddy"
+                    checked={this.state.answer1 === "teddy"}
+                    onChange={this.onRadioChange}
+                  />
+                  <span>Teddy bears</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input
+                    type="radio"
+                    value="bamboo"
+                    checked={this.state.answer1 === "bamboo"}
+                    onChange={this.onRadioChange}
+                  />
+                  <span>Bamboo</span> 
+                  <div className="answers">
+                    {
+                      this.state.answer1 === 'bamboo' ? "BOO YA!" : ""
+                    }
+                  </div>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input
+                    type="radio"
+                    value="leaves"
+                    checked={this.state.answer1 === "leaves"}
+                    onChange={this.onRadioChange}
+                  />
+                  <span>Ghost leaves</span>
+                </label>
+              </li>
+            </ul>
+          </div>
 
           <strong>What did the ghost teacher say to the class?</strong>
           <ul>
@@ -73,7 +80,7 @@ class Quiz extends React.Component {
                 <input
                   type="radio"
                   value="boohoo"
-                  checked={this.state.answer === "boohoo"}
+                  checked={this.state.answer1 === "boohoo"}
                   onChange={this.onRadioChange}
                 />
                 <span>Boo hoo. Just do the work!</span>
@@ -84,7 +91,7 @@ class Quiz extends React.Component {
                 <input
                   type="radio"
                   value="haunt"
-                  checked={this.state.answer === "haunt"}
+                  checked={this.state.answer1 === "haunt"}
                   onChange={this.onRadioChange}
                 />
                 <span>Don't be scared. I'm here to <span style={{textDecorationLine: "line-through"}}>haunt</span> help you.</span>
@@ -94,11 +101,16 @@ class Quiz extends React.Component {
               <label>
                 <input
                   type="radio"
-                  value="correct2"
-                  checked={this.state.answer === "correct2"}
+                  value="board"
+                  checked={this.state.answer1 === "board"}
                   onChange={this.onRadioChange}
                 />
                 <span>Look at the board and I will go through it again!</span>
+                <div className="answers">
+                    {
+                      this.state.answer1 === 'board' ? "BOO YA!" : ""
+                    }
+                  </div>
               </label>
             </li>
           </ul>
@@ -108,11 +120,16 @@ class Quiz extends React.Component {
               <label>
                 <input
                   type="radio"
-                  value="correct3"
-                  checked={this.state.answer === "correct3"}
+                  value="dead"
+                  checked={this.state.answer1 === "dead"}
                   onChange={this.onRadioChange}
                 />
                 <span>Dead funny!</span>
+                <div className="answers">
+                    {
+                      this.state.answer1 === 'dead' ? "BOO YA!" : ""
+                    }
+                  </div>
               </label>
             </li>
             <li>
@@ -120,7 +137,7 @@ class Quiz extends React.Component {
                 <input
                   type="radio"
                   value="offGrid"
-                  checked={this.state.answer === "offGrid"}
+                  checked={this.state.answer1 === "offGrid"}
                   onChange={this.onRadioChange}
                 />
                 <span>Off the grid!</span>
@@ -131,15 +148,20 @@ class Quiz extends React.Component {
                 <input
                   type="radio"
                   value="nobody"
-                  checked={this.state.answer === "nobody"}
+                  checked={this.state.answer1 === "nobody"}
                   onChange={this.onRadioChange}
                 />
                 <span>A Nobody!</span>
               </label>
             </li>
           </ul>
-          <button type="submit">Ghost it</button>
-        </form>
+          {/* <button type="submit">Ghost it</button> */}
+        {/* </form> */}
+        { this.state.answer1 === 'bamboo' ? <Link to="#">Will I take you anywhere?</Link> : "" }
+
+        { this.state.answer1 === 'board' ? <Link to="#">Will I take you anywhere?</Link> : "" }
+
+        { this.state.answer1 === 'dead' ? <Link to="/success">Will I take you anywhere?</Link> : "" }
       </div>
     );
   }
