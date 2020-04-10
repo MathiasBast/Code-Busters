@@ -30,28 +30,15 @@ body {
 .path {
   border: black 1px solid;
   height: 800px;
-
 }
+
 .death {
   background-color: black;
 }
+
 .row {
   width: 100%;
   display: flex;
-}
-
-.hintChild {
-  flex-wrap: wrap;
-}
-.hintContainer{
-  display: flex;
-  background-color: rgb(156, 154, 154);
-}
-.hintButton{
-  position: relative;
-  height: 25px;
-  left: 100px;
-  margin: 5px;
 }
 
 .find a,
@@ -62,7 +49,35 @@ body {
 
 a, a:visited {
   text-decoration: none;
-  color: black
+  color: black;
+}
+
+.hintChild {
+  flex-wrap: wrap;
+}
+.hintContainer{
+  display: flex;
+  background-color: rgb(156, 154, 154);
+  height: 70px;
+  line-height: 25px;
+  border: 1px dashed gray;
+}
+
+.hintButton{
+  position: relative;
+  background-color: black;
+  height: 45px;
+  left: 100px;
+  /* margin: 5px; */
+  border-radius: 10px;
+  border: 3px solid #ebc334;
+  font-size: 20px;
+  color: white;
+  margin: 12.5px 10px;
+}
+
+.hintButton a {
+  color: #ebc334;
 }
 
 .header {
