@@ -1,7 +1,8 @@
 .game {
-  width: 900px;
-  height: 600px;
-  background-color: grey;
+  width: 1500px;
+  height: 1000px;
+  background-color: white;
+  margin: none;
 }
 
 .find {
@@ -25,5 +26,8 @@
   margin: 5px;
 }
 
-
-
+.find a,
+.find a:visited {
+  color: white;
+  text-decoration: none;
+}

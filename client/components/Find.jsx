@@ -7,8 +7,6 @@ const Find = () => {
   return (
     <div className="find container">
       <p><Link to="/game/path">Follow me to find the ghost...</Link></p>
-      {/* <img src='/images/ghost.png' alt='image of a cute ghost' /> */}
-      
     </div>
   )
 }
