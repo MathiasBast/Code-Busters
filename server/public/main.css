@@ -1,25 +1,43 @@
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 body {
   font-family: 'Bangers', cursive;
   font-size: 25px;
 }
 
 .game {
-  width: 1500px;
-  height: 1000px;
+  width: 1200px;
+  height: 800px;
   background-color: white;
-  margin: none;
+  margin: auto;
+  position: relative;
 }
 
 .find {
+  position: absolute;
   margin: none;
   bottom: 0;
-  position: fixed;
 }
 
-.find a,
-.find a:visited {
-  color: white;
-  text-decoration: none;
+.ghost {
+  height: 75px;
+}
+
+.path {
+  border: black 1px solid;
+  height: 800px;
+
+}
+.death {
+  background-color: black;
+}
+.row {
+  width: 100%;
+  display: flex;
 }
 
 .hintChild {
