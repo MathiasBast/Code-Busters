@@ -3,9 +3,12 @@
   flex-direction: column;
   justify-content: center;
 }
-h1 {
-  margin: auto;
+
+body {
+  font-family: 'Bangers', cursive;
+  font-size: 25px;
 }
+
 .game {
   width: 1200px;
   height: 800px;
@@ -16,13 +19,8 @@ h1 {
 
 .find {
   position: absolute;
+  margin: none;
   bottom: 0;
-}
-
-.find a,
-.find a:visited {
-  color: white;
-  text-decoration: none;
 }
 
 .ghost {
@@ -30,7 +28,7 @@ h1 {
 }
 
 .path {
-  border: black 2px solid;
+  border: black 1px solid;
   height: 800px;
 
 }
@@ -40,4 +38,38 @@ h1 {
 .row {
   width: 100%;
   display: flex;
+}
+
+.hintChild {
+  flex-wrap: wrap;
+}
+.hintContainer{
+  display: flex;
+  background-color: rgb(156, 154, 154);
+}
+.hintButton{
+  position: relative;
+  height: 25px;
+  left: 100px;
+  margin: 5px;
+}
+
+.find a,
+.find a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.header {
+  background-color: #ebc334;
+  height: 120px;
+  width: 100%;
+  margin: none;
+}
+
+.header h1 {
+  text-align: center;
+  font-size: 85px;
+  line-height: 120px;
+  margin-top: 0;
 }
