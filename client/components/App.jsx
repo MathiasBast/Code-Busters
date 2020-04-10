@@ -9,7 +9,9 @@ import Game from './Game'
 const App = () => {
   return (
     <>
-      <h1>Code Busters</h1>
+      <div className='header'>
+        <h1>Code Busters</h1>
+      </div>
       <div className='game'>
         <Route exact path='/'>
           {<Redirect to='/game/find' />}
