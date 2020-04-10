@@ -11,7 +11,7 @@ const ShowHint = props => {
     rend = "The awnsers should make you cringe"
   }
   if (name === 'path') {
-    rend = "Feel your way around, trial and error is the way to go"
+    rend = "A skill it is indeed... or just go around ¯\_(ツ)_/¯"
   }
   return (
     <div className='hintContainer'>
