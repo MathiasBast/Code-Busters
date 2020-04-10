@@ -10,3 +10,20 @@
   height: 100%;
   margin: none;
 }
+
+.hintChild {
+  flex-wrap: wrap;
+}
+.hintContainer{
+  display: flex;
+  background-color: rgb(156, 154, 154);
+}
+.hintButton{
+  position: relative;
+  height: 25px;
+  left: 100px;
+  margin: 5px;
+}
+
+
+
