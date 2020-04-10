@@ -9,6 +9,11 @@ body {
   font-size: 25px;
 }
 
+a #success {
+  color: #ebc334;
+  font-size: 45px;
+}
+
 .game {
   width: 1200px;
   height: 800px;
@@ -96,4 +101,37 @@ a, a:visited {
 
 #yellow {
   color: #ebc334;
+}
+
+.quiz-questions li {
+  list-style-type: none;
+}
+
+.quiz-questions {
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+.quiz-questions strong {
+  text-decoration: underline;
+  font-size: 30px;
+}
+
+.myDiv {
+  margin-top: 70px;
+}
+
+.answers {
+  color: #ebc334;
+}
+
+.progress {
+  float: right;
+  color: #ebc334;
+  height: 70px;
+  width: 150px;
+  text-align: center;
+  border: 4px solid black;
+  padding: 20px;
+  box-shadow: 5px 5px 10px #ebc334;
 }
