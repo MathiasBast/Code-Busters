@@ -8,7 +8,7 @@ const ShowHint = props => {
     rend = "Invert the color to discover the truth about the sleuth..."
   }
   if (name === 'quiz') {
-    rend = "The awnsers should make you cringe"
+    rend = "The answers should make you cringe"
   }
   if (name === 'path') {
     rend = "A skill it is indeed... or just go around ¯\_(ツ)_/¯"
