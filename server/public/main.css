@@ -1,12 +1,21 @@
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+h1 {
+  margin: auto;
+}
 .game {
-  width: 1500px;
-  height: 1000px;
+  width: 1200px;
+  height: 800px;
   background-color: white;
-  margin: none;
+  margin: auto;
+  position: relative;
 }
 
 .find {
-  position: fixed;
+  position: absolute;
   bottom: 0;
 }
 
@@ -14,4 +23,21 @@
 .find a:visited {
   color: white;
   text-decoration: none;
+}
+
+.ghost {
+  height: 75px;
+}
+
+.path {
+  border: black 2px solid;
+  height: 800px;
+
+}
+.death {
+  background-color: black;
+}
+.row {
+  width: 100%;
+  display: flex;
 }
