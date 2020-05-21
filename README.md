@@ -1,22 +1,32 @@
-Code Busters
+# Code Busters
 
-The team that make games that rocks!
+The team that makes games that rock!
 
-# MVP 
+To begin:
 
-- Set up the Repo
-- Set up the components
-- Set up the route
-- Link and route the jsx components
-- Make the page functions work
-- Make the win/loss pages
-- Work on design/css
+```sh
+npm install
+```
 
-# Stretch
-- Make the hints with pop ups animation
-- Make CSS better
+```sh
+npm run dev
+```
 
-# Team
+## MVP 
+
+- [x] Set up the repo
+- [x] Set up the components
+- [x] Set up the route
+- [x] Link and route the .jsx components
+- [x] Make the page functions work
+- [x] Make the win/loss pages
+- [x] Work on design/CSS
+
+## Stretch
+- [ ] Make the hints with pop-up animation
+- [ ] Improve CSS
+
+## Team
 - Alicia
 - Ellora
 - John
