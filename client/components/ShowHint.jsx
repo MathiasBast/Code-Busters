@@ -5,10 +5,10 @@ const ShowHint = props => {
   const name = props.match.params.page
   let rend = 'nope'
   if(name === 'find'){
-    rend = "Invert the color to discover the truth about the sleuth..."
+    rend = "Invert the colour to discover the truth about the sleuth..."
   }
   if (name === 'quiz') {
-    rend = "The answers should make you cringe"
+    rend = "The answers should make you cringe..."
   }
   if (name === 'path') {
     rend = "A skill it is indeed... or just go around ¯\_(ツ)_/¯"
