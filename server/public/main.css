@@ -63,10 +63,13 @@ a, a:visited {
 }
 .hintContainer{
   display: flex;
-  background-color: rgb(156, 154, 154);
+  background-color: lightgray;
+  width: auto;
   height: 70px;
   line-height: 25px;
-  border: 1px dashed gray;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-top: 1%;
 }
 
 .hintButton{
@@ -74,11 +77,11 @@ a, a:visited {
   background-color: black;
   height: 45px;
   left: 100px;
-  /* margin: 5px; */
   border-radius: 10px;
   border: 3px solid #ebc334;
-  font-size: 20px;
-  color: white;
+  font-family: 'Bangers', cursive;
+  font-size: 15px;
+  letter-spacing: 0.1em;
   margin: 12.5px 10px;
 }
 
@@ -90,7 +93,7 @@ a, a:visited {
   background-color: #ebc334;
   height: 120px;
   width: 100%;
-  margin: none;
+  margin-bottom: 1%;
 }
 
 .header h1 {
