@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, Redirect } from 'react-router-dom'
+import { Link, Route, Redirect } from 'react-router-dom'
 
 import Success from './Success'
 import Fail from './Fail'
@@ -10,7 +10,9 @@ const App = () => {
   return (
     <>
       <div className='header'>
-        <h1>Code Busters</h1>
+        <Link to='/'>
+          <h1>Code Busters</h1>
+        </Link>
       </div>
       <div className='game'>
         <Route exact path='/'>
