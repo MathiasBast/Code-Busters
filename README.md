@@ -2,7 +2,9 @@
 
 The team that makes games that rock!
 
-To begin:
+### To begin...
+
+Clone down the repo, then:
 
 ```sh
 npm install
