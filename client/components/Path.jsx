@@ -12,7 +12,7 @@ class Path extends React.Component {
   }
   render () {
     return (
-      <div className="path container">
+      <div onMouseLeave={this.changeState} className="path container">
         <div> {this.state.mouseOutOfBounds ? <Route exact path='/game/path'>{<Redirect to='/fail' />} </Route> : null}</div>
         {/* ghost */}
         <div className='row' style={{ height: 80 }}>
