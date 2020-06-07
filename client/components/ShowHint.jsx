@@ -25,10 +25,3 @@ const ShowHint = props => {
 }
 
 export default ShowHint
-
-/*
-classes = hintContainer,
-hintChild,
-hintButton,
-
-*/
