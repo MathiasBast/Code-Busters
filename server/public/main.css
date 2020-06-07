@@ -59,13 +59,12 @@ a, a:visited {
   color: black;
 }
 
-.hintChild {
-  flex-wrap: wrap;
-}
-.hintContainer{
+.hintContainer {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   background-color: lightgray;
-  width: auto;
+  width: 82vw;
   height: 70px;
   line-height: 25px;
   border-radius: 5px;
@@ -73,11 +72,14 @@ a, a:visited {
   margin-top: 1%;
 }
 
-.hintButton{
+.hintChild {
+  flex-wrap: wrap;
+}
+
+.hintButton {
   position: relative;
   background-color: black;
   height: 45px;
-  left: 100px;
   border-radius: 10px;
   border: 3px solid #ebc334;
   font-family: 'Bangers', cursive;
