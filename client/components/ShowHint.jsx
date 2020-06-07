@@ -17,7 +17,6 @@ const ShowHint = props => {
     <div className='hintContainer'>
       <p className='hintChild'>{rend}</p>
       <div className='hintButtonsCont'>
-        <button className='hintButton'><Link className='hintChild' to={`/game/${name}`} >Hide hint</Link></button>
         <button className='hintButton'><Link className='hintChild' to='/'>Restart game</Link></button>
       </div>
     </div>
