@@ -19,6 +19,7 @@ a #success {
 .game {
   width: 1200px;
   height: 800px;
+  max-height: 85vh;
   background-color: white;
   margin: auto;
   position: relative;
@@ -94,7 +95,7 @@ a, a:visited {
 
 .header {
   background-color: #ebc334;
-  height: 120px;
+  height: 15vh;
   width: 100%;
   margin-bottom: 1%;
 }
@@ -102,7 +103,7 @@ a, a:visited {
 .header h1 {
   text-align: center;
   font-size: 85px;
-  line-height: 120px;
+  line-height: 15vh;
   margin-top: 0;
 }
 
